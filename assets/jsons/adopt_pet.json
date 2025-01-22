@@ -1,0 +1,404 @@
+{
+    "pets": [
+        {
+            "id": 1,
+            "name": "Pet Dog_1",
+            "category": "Dog",
+            "already_adopted": false,
+            "location": "Location 1, India",
+            "image_url": "https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8xNV9waG90b19vZl9hX2RvZ19ydW5uaW5nX3dpdGhfb3duZXJfYXRfcGFya19lcF9mM2I3MDQyZC0zNWJlLTRlMTQtOGZhNy1kY2Q2OWQ1YzQzZjlfMi5qcGc.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Pet Dog_2",
+            "category": "Dog",
+            "already_adopted": false,
+            "location": "Location 2, India",
+            "image_url": "https://images.squarespace-cdn.com/content/v1/54822a56e4b0b30bd821480c/45ed8ecf-0bb2-4e34-8fcf-624db47c43c8/Golden+Retrievers+dans+pet+care.jpeg"
+        },
+        {
+            "id": 3,
+            "name": "Pet Dog_3",
+            "category": "Dog",
+            "already_adopted": false,
+            "location": "Location 3, India",
+            "image_url": "https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8xNV9waG90b19vZl9hX2RvZ19ydW5uaW5nX3dpdGhfb3duZXJfYXRfcGFya19lcF9mM2I3MDQyZC0zNWJlLTRlMTQtOGZhNy1kY2Q2OWQ1YzQzZjlfMi5qcGc.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Pet Dog_4",
+            "category": "Dog",
+            "already_adopted": false,
+            "location": "Location 4, India",
+            "image_url": "https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8xNV9waG90b19vZl9hX2RvZ19ydW5uaW5nX3dpdGhfb3duZXJfYXRfcGFya19lcF9mM2I3MDQyZC0zNWJlLTRlMTQtOGZhNy1kY2Q2OWQ1YzQzZjlfMi5qcGc.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Pet Dog_5",
+            "category": "Dog",
+            "already_adopted": false,
+            "location": "Location 0, India",
+            "image_url": "https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8xNV9waG90b19vZl9hX2RvZ19ydW5uaW5nX3dpdGhfb3duZXJfYXRfcGFya19lcF9mM2I3MDQyZC0zNWJlLTRlMTQtOGZhNy1kY2Q2OWQ1YzQzZjlfMi5qcGc.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Pet Dog_6",
+            "category": "Dog",
+            "already_adopted": false,
+            "location": "Location 1, India",
+            "image_url": "https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8xNV9waG90b19vZl9hX2RvZ19ydW5uaW5nX3dpdGhfb3duZXJfYXRfcGFya19lcF9mM2I3MDQyZC0zNWJlLTRlMTQtOGZhNy1kY2Q2OWQ1YzQzZjlfMi5qcGc.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Pet Dog_7",
+            "category": "Dog",
+            "already_adopted": false,
+            "location": "Location 2, India",
+            "image_url": "https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8xNV9waG90b19vZl9hX2RvZ19ydW5uaW5nX3dpdGhfb3duZXJfYXRfcGFya19lcF9mM2I3MDQyZC0zNWJlLTRlMTQtOGZhNy1kY2Q2OWQ1YzQzZjlfMi5qcGc.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Pet Dog_8",
+            "category": "Dog",
+            "already_adopted": true,
+            "location": "Location 3, India",
+            "image_url": "https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8xNV9waG90b19vZl9hX2RvZ19ydW5uaW5nX3dpdGhfb3duZXJfYXRfcGFya19lcF9mM2I3MDQyZC0zNWJlLTRlMTQtOGZhNy1kY2Q2OWQ1YzQzZjlfMi5qcGc.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Pet Dog_9",
+            "category": "Dog",
+            "already_adopted": false,
+            "location": "Location 4, India",
+            "image_url": "https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8xNV9waG90b19vZl9hX2RvZ19ydW5uaW5nX3dpdGhfb3duZXJfYXRfcGFya19lcF9mM2I3MDQyZC0zNWJlLTRlMTQtOGZhNy1kY2Q2OWQ1YzQzZjlfMi5qcGc.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Pet Dog_10",
+            "category": "Dog",
+            "already_adopted": false,
+            "location": "Location 0, India",
+            "image_url": "https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8xNV9waG90b19vZl9hX2RvZ19ydW5uaW5nX3dpdGhfb3duZXJfYXRfcGFya19lcF9mM2I3MDQyZC0zNWJlLTRlMTQtOGZhNy1kY2Q2OWQ1YzQzZjlfMi5qcGc.jpg"
+        },
+        {
+            "id": 11,
+            "name": "Pet Cat_1",
+            "category": "Cat",
+            "already_adopted": false,
+            "location": "Location 1, India",
+            "image_url": "https://static.vecteezy.com/system/resources/thumbnails/024/646/930/small/ai-generated-stray-cat-in-danger-background-animal-background-photo.jpg"
+        },
+        {
+            "id": 12,
+            "name": "Pet Cat_2",
+            "category": "Cat",
+            "already_adopted": false,
+            "location": "Location 2, India",
+            "image_url": "https://static.vecteezy.com/system/resources/thumbnails/024/646/930/small/ai-generated-stray-cat-in-danger-background-animal-background-photo.jpg"
+        },
+        {
+            "id": 13,
+            "name": "Pet Cat_3",
+            "category": "Cat",
+            "already_adopted": false,
+            "location": "Location 3, India",
+            "image_url": "https://static.vecteezy.com/system/resources/thumbnails/024/646/930/small/ai-generated-stray-cat-in-danger-background-animal-background-photo.jpg"
+        },
+        {
+            "id": 14,
+            "name": "Pet Cat_4",
+            "category": "Cat",
+            "already_adopted": true,
+            "location": "Location 4, India",
+            "image_url": "https://static.vecteezy.com/system/resources/thumbnails/024/646/930/small/ai-generated-stray-cat-in-danger-background-animal-background-photo.jpg"
+        },
+        {
+            "id": 15,
+            "name": "Pet Cat_5",
+            "category": "Cat",
+            "already_adopted": false,
+            "location": "Location 0, India",
+            "image_url": "https://static.vecteezy.com/system/resources/thumbnails/024/646/930/small/ai-generated-stray-cat-in-danger-background-animal-background-photo.jpg"
+        },
+        {
+            "id": 16,
+            "name": "Pet Cat_6",
+            "category": "Cat",
+            "already_adopted": true,
+            "location": "Location 1, India",
+            "image_url": "https://static.vecteezy.com/system/resources/thumbnails/024/646/930/small/ai-generated-stray-cat-in-danger-background-animal-background-photo.jpg"
+        },
+        {
+            "id": 17,
+            "name": "Pet Cat_7",
+            "category": "Cat",
+            "already_adopted": false,
+            "location": "Location 2, India",
+            "image_url": "https://static.vecteezy.com/system/resources/thumbnails/024/646/930/small/ai-generated-stray-cat-in-danger-background-animal-background-photo.jpg"
+        },
+        {
+            "id": 18,
+            "name": "Pet Cat_8",
+            "category": "Cat",
+            "already_adopted": true,
+            "location": "Location 3, India",
+            "image_url": "https://static.vecteezy.com/system/resources/thumbnails/024/646/930/small/ai-generated-stray-cat-in-danger-background-animal-background-photo.jpg"
+        },
+        {
+            "id": 19,
+            "name": "Pet Cat_9",
+            "category": "Cat",
+            "already_adopted": false,
+            "location": "Location 4, India",
+            "image_url": "https://static.vecteezy.com/system/resources/thumbnails/024/646/930/small/ai-generated-stray-cat-in-danger-background-animal-background-photo.jpg"
+        },
+        {
+            "id": 20,
+            "name": "Pet Cat_10",
+            "category": "Cat",
+            "already_adopted": true,
+            "location": "Location 0, India",
+            "image_url": "https://static.vecteezy.com/system/resources/thumbnails/024/646/930/small/ai-generated-stray-cat-in-danger-background-animal-background-photo.jpg"
+        },
+        {
+            "id": 21,
+            "name": "Pet Rabbit_1",
+            "category": "Rabbit",
+            "already_adopted": false,
+            "location": "Location 1, India",
+            "image_url": "https://www.humanesociety.org/sites/default/files/2019/03/rabbit-475261_0.jpg"
+        },
+        {
+            "id": 22,
+            "name": "Pet Rabbit_2",
+            "category": "Rabbit",
+            "already_adopted": true,
+            "location": "Location 2, India",
+            "image_url": "https://www.humanesociety.org/sites/default/files/2019/03/rabbit-475261_0.jpg"
+        },
+        {
+            "id": 23,
+            "name": "Pet Rabbit_3",
+            "category": "Rabbit",
+            "already_adopted": false,
+            "location": "Location 3, India",
+            "image_url": "https://www.humanesociety.org/sites/default/files/2019/03/rabbit-475261_0.jpg"
+        },
+        {
+            "id": 24,
+            "name": "Pet Rabbit_4",
+            "category": "Rabbit",
+            "already_adopted": true,
+            "location": "Location 4, India",
+            "image_url": "https://www.humanesociety.org/sites/default/files/2019/03/rabbit-475261_0.jpg"
+        },
+        {
+            "id": 25,
+            "name": "Pet Rabbit_5",
+            "category": "Rabbit",
+            "already_adopted": false,
+            "location": "Location 0, India",
+            "image_url": "https://www.humanesociety.org/sites/default/files/2019/03/rabbit-475261_0.jpg"
+        },
+        {
+            "id": 26,
+            "name": "Pet Rabbit_6",
+            "category": "Rabbit",
+            "already_adopted": true,
+            "location": "Location 1, India",
+            "image_url": "https://www.humanesociety.org/sites/default/files/2019/03/rabbit-475261_0.jpg"
+        },
+        {
+            "id": 27,
+            "name": "Pet Rabbit_7",
+            "category": "Rabbit",
+            "already_adopted": false,
+            "location": "Location 2, India",
+            "image_url": "https://www.humanesociety.org/sites/default/files/2019/03/rabbit-475261_0.jpg"
+        },
+        {
+            "id": 28,
+            "name": "Pet Rabbit_8",
+            "category": "Rabbit",
+            "already_adopted": true,
+            "location": "Location 3, India",
+            "image_url": "https://www.humanesociety.org/sites/default/files/2019/03/rabbit-475261_0.jpg"
+        },
+        {
+            "id": 29,
+            "name": "Pet Rabbit_9",
+            "category": "Rabbit",
+            "already_adopted": false,
+            "location": "Location 4, India",
+            "image_url": "https://www.humanesociety.org/sites/default/files/2019/03/rabbit-475261_0.jpg"
+        },
+        {
+            "id": 30,
+            "name": "Pet Rabbit_10",
+            "category": "Rabbit",
+            "already_adopted": true,
+            "location": "Location 0, India",
+            "image_url": "https://www.humanesociety.org/sites/default/files/2019/03/rabbit-475261_0.jpg"
+        },
+        {
+            "id": 31,
+            "name": "Pet Parrot_1",
+            "category": "Parrot",
+            "already_adopted": false,
+            "location": "Location 1, India",
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh3-izIPgTvVHhEPVgndrDsG3zfNM_iolzng&s"
+        },
+        {
+            "id": 32,
+            "name": "Pet Parrot_2",
+            "category": "Parrot",
+            "already_adopted": true,
+            "location": "Location 2, India",
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh3-izIPgTvVHhEPVgndrDsG3zfNM_iolzng&s"
+        },
+        {
+            "id": 33,
+            "name": "Pet Parrot_3",
+            "category": "Parrot",
+            "already_adopted": false,
+            "location": "Location 3, India",
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh3-izIPgTvVHhEPVgndrDsG3zfNM_iolzng&s"
+        },
+        {
+            "id": 34,
+            "name": "Pet Parrot_4",
+            "category": "Parrot",
+            "already_adopted": true,
+            "location": "Location 4, India",
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh3-izIPgTvVHhEPVgndrDsG3zfNM_iolzng&s"
+        },
+        {
+            "id": 35,
+            "name": "Pet Parrot_5",
+            "category": "Parrot",
+            "already_adopted": false,
+            "location": "Location 0, India",
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh3-izIPgTvVHhEPVgndrDsG3zfNM_iolzng&s"
+        },
+        {
+            "id": 36,
+            "name": "Pet Parrot_6",
+            "category": "Parrot",
+            "already_adopted": true,
+            "location": "Location 1, India",
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh3-izIPgTvVHhEPVgndrDsG3zfNM_iolzng&s"
+        },
+        {
+            "id": 37,
+            "name": "Pet Parrot_7",
+            "category": "Parrot",
+            "already_adopted": false,
+            "location": "Location 2, India",
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh3-izIPgTvVHhEPVgndrDsG3zfNM_iolzng&s"
+        },
+        {
+            "id": 38,
+            "name": "Pet Parrot_8",
+            "category": "Parrot",
+            "already_adopted": true,
+            "location": "Location 3, India",
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh3-izIPgTvVHhEPVgndrDsG3zfNM_iolzng&s"
+        },
+        {
+            "id": 39,
+            "name": "Pet Parrot_9",
+            "category": "Parrot",
+            "already_adopted": false,
+            "location": "Location 4, India",
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh3-izIPgTvVHhEPVgndrDsG3zfNM_iolzng&s"
+        },
+        {
+            "id": 40,
+            "name": "Pet Parrot_10",
+            "category": "Parrot",
+            "already_adopted": true,
+            "location": "Location 0, India",
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh3-izIPgTvVHhEPVgndrDsG3zfNM_iolzng&s"
+        },
+        {
+            "id": 41,
+            "name": "Pet Hamster_1",
+            "category": "Hamster",
+            "already_adopted": false,
+            "location": "Location 1, India",
+            "image_url": "https://www.orangepet.in/cdn/shop/articles/shutterstock_2053311815_1.jpg?v=1681894128"
+        },
+        {
+            "id": 42,
+            "name": "Pet Hamster_2",
+            "category": "Hamster",
+            "already_adopted": true,
+            "location": "Location 2, India",
+            "image_url": "https://www.orangepet.in/cdn/shop/articles/shutterstock_2053311815_1.jpg?v=1681894128"
+        },
+        {
+            "id": 43,
+            "name": "Pet Hamster_3",
+            "category": "Hamster",
+            "already_adopted": false,
+            "location": "Location 3, India",
+            "image_url": "https://www.orangepet.in/cdn/shop/articles/shutterstock_2053311815_1.jpg?v=1681894128"
+        },
+        {
+            "id": 44,
+            "name": "Pet Hamster_4",
+            "category": "Hamster",
+            "already_adopted": true,
+            "location": "Location 4, India",
+            "image_url": "https://www.orangepet.in/cdn/shop/articles/shutterstock_2053311815_1.jpg?v=1681894128"
+        },
+        {
+            "id": 45,
+            "name": "Pet Hamster_5",
+            "category": "Hamster",
+            "already_adopted": false,
+            "location": "Location 0, India",
+            "image_url": "https://www.orangepet.in/cdn/shop/articles/shutterstock_2053311815_1.jpg?v=1681894128"
+        },
+        {
+            "id": 46,
+            "name": "Pet Hamster_6",
+            "category": "Hamster",
+            "already_adopted": true,
+            "location": "Location 1, India",
+            "image_url": "https://www.orangepet.in/cdn/shop/articles/shutterstock_2053311815_1.jpg?v=1681894128"
+        },
+        {
+            "id": 47,
+            "name": "Pet Hamster_7",
+            "category": "Hamster",
+            "already_adopted": false,
+            "location": "Location 2, India",
+            "image_url": "https://www.orangepet.in/cdn/shop/articles/shutterstock_2053311815_1.jpg?v=1681894128"
+        },
+        {
+            "id": 48,
+            "name": "Pet Hamster_8",
+            "category": "Hamster",
+            "already_adopted": true,
+            "location": "Location 3, India",
+            "image_url": "https://www.orangepet.in/cdn/shop/articles/shutterstock_2053311815_1.jpg?v=1681894128"
+        },
+        {
+            "id": 49,
+            "name": "Pet Hamster_9",
+            "category": "Hamster",
+            "already_adopted": false,
+            "location": "Location 4, India",
+            "image_url": "https://www.orangepet.in/cdn/shop/articles/shutterstock_2053311815_1.jpg?v=1681894128"
+        },
+        {
+            "id": 50,
+            "name": "Pet Hamster_10",
+            "category": "Hamster",
+            "already_adopted": true,
+            "location": "Location 0, India",
+            "image_url": "https://www.orangepet.in/cdn/shop/articles/shutterstock_2053311815_1.jpg?v=1681894128"
+        }
+    ]
+}
