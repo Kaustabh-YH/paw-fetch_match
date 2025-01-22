@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pawfetch_match/core/helpers/app_style_helper.dart';
 import 'package:pawfetch_match/features/pet_adoption/data/models/pet_list_model.dart';
+import 'package:pawfetch_match/features/pet_adoption_history/presentation/blocs/pet_adoption_history_bloc.dart';
 import 'package:pawfetch_match/features/pet_details/presentation/blocs/pet_detail_bloc.dart';
 import 'package:pawfetch_match/features/pet_details/presentation/view/pet_detail_image_interactive_viewer.dart';
 import 'package:pawfetch_match/features/pet_details/presentation/widgets/pet_detail_page_body.dart';
@@ -11,11 +12,13 @@ class PetDetailPage extends StatelessWidget {
   //Data Types
 
   final Pets petDetail;
+  final void Function(int) isAdoptedCallback;
 
   //Constructor
 
   const PetDetailPage({
     super.key,
+    required this.isAdoptedCallback,
     required this.petDetail,
   });
 
@@ -54,6 +57,12 @@ class PetDetailPage extends StatelessWidget {
           }
         },
         builder: (context, state) {
+
+          if(state is PetDetailAdoptionUpdatedState) {
+            isAdoptedCallback.call(petDetail.id ?? 0);
+            petDetail.alreadyAdopted = true;
+          }
+
           return PetDetailPageBody(
             petDetail: petDetail,
             backButtonCallback: () {

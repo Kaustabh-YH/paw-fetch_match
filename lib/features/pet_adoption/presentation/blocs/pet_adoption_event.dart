@@ -26,3 +26,21 @@ class SearchPetByNameEvent extends PetAdoptionEvent {
     required this.pets,
   });
 }
+
+class UpdateCategoryIdEvent extends PetAdoptionEvent {
+  final int catId;
+  final List<Pets> pets;
+  final List<Categories> categories;
+
+  UpdateCategoryIdEvent({
+    required this.catId,
+    required this.pets,
+    required this.categories,
+  });
+}
+
+class UpdateAdoptionEvent extends PetAdoptionEvent {
+  final int petId;
+
+  UpdateAdoptionEvent({required this.petId});
+}

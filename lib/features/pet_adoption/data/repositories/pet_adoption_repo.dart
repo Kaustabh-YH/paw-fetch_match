@@ -3,6 +3,7 @@ import 'package:pawfetch_match/features/pet_adoption/data/models/pet_list_model.
 import 'package:pawfetch_match/features/pet_adoption/domain/repositories/pet_adoption_repo_interface.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:shared_preferences/shared_preferences.dart';
 
 class PetAdoptionRepo implements PetAdoptionRepoInterface {
 
@@ -11,9 +12,21 @@ class PetAdoptionRepo implements PetAdoptionRepoInterface {
 
     try {
       // Load the JSON file from assets
+      final SharedPreferences preferences = await SharedPreferences.getInstance();
+      final vals = preferences.getStringList('adopted_ids') ?? [];
+
       final String response = await rootBundle.loadString('assets/jsons/adopt_pet.json');
       // Decode JSON
       final PetListModel data = PetListModel.fromJson(json.decode(response));
+
+      if(vals.isNotEmpty) {
+        for(Pets pet in data.pets ?? []) {
+          if(vals.contains('${pet.id}')) {
+            pet.alreadyAdopted = true;
+          }
+        }
+      }
+
       return data;
     } catch (e) {
       rethrow;

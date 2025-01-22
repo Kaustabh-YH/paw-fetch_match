@@ -52,6 +52,7 @@ class PetDetailPageBody extends StatelessWidget {
             },
           ),
           PetDetailInfoContainer(height: height, petDetail: petDetail,),
+          if((petDetail.alreadyAdopted ?? false) == false)
           PetDetailAdoptButton(
             callback: () {
               adoptMeCallback.call();

@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
         fontFamily: AppStyle.shared.getDefaultFontFamily(),
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white, brightness: Brightness.light),
         useMaterial3: true,
       ),
       darkTheme: ThemeData(
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
         fontFamily: AppStyle.shared.getDefaultFontFamily(),
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white, brightness: Brightness.dark),
         useMaterial3: true,// Dark theme
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),

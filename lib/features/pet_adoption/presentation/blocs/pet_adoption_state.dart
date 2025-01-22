@@ -32,4 +32,10 @@ class MoveToPetDetailPageActionState extends PetAdoptionActionState {
 
 class MoveToAdoptedPetHistoryPage extends PetAdoptionActionState {}
 
+class UpdatedAdoptionListingState extends PetAdoptionState {
+  final int petId;
+
+  UpdatedAdoptionListingState({required this.petId});
+}
+
 

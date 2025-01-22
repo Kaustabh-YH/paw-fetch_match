@@ -6,9 +6,11 @@ import 'package:pawfetch_match/features/pet_adoption/data/models/pet_categories_
 class PetCategoriesHorizontalList extends StatelessWidget {
   final List<Categories> categories;
   final int selectedCategoryId;
+  final void Function(int) updateCategoryIdCallback;
 
   const PetCategoriesHorizontalList({
     super.key,
+    required this.updateCategoryIdCallback,
     required this.categories,
     required this.selectedCategoryId,
   });
@@ -25,38 +27,43 @@ class PetCategoriesHorizontalList extends StatelessWidget {
         itemBuilder: (context, index) {
           bool isSelected = categories[index].id == selectedCategoryId;
 
-          return Container(
-            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-            decoration: BoxDecoration(
-              color: isSelected ? AppColors.primaryColor : Colors.white,
-              border: Border.all(color: Colors.black12),
-              borderRadius: BorderRadius.circular(16),
-            ),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(15),
-                  child: SizedBox(
-                    width: 30,
-                    height: 30,
-                    child: Image.network(
-                      'https://www.cdc.gov/healthy-pets/media/images/2024/04/GettyImages-598175960-cute-dog-headshot.jpg',
-                      fit: BoxFit.cover,
+          return InkWell(
+            onTap: () {
+              updateCategoryIdCallback.call(categories[index].id ?? 0);
+            },
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: isSelected ? AppColors.primaryColor : Colors.white,
+                border: Border.all(color: Colors.black12),
+                borderRadius: BorderRadius.circular(16),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(15),
+                    child: SizedBox(
+                      width: 30,
+                      height: 30,
+                      child: Image.network(
+                        'https://www.cdc.gov/healthy-pets/media/images/2024/04/GettyImages-598175960-cute-dog-headshot.jpg',
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
-                ),
-                const SizedBox(width: 4),
-                Text(
-                  categories[index].name.toString(),
-                  style: AppStyle.shared.customTextStyle(
-                    color: isSelected
-                        ? Colors.white
-                        : AppColors.fontSecondaryColor,
-                    weight: isSelected ? FontWeight.w500 : FontWeight.w400,
-                  ),
-                )
-              ],
+                  const SizedBox(width: 4),
+                  Text(
+                    categories[index].name.toString(),
+                    style: AppStyle.shared.customTextStyle(
+                      color: isSelected
+                          ? Colors.white
+                          : AppColors.fontSecondaryColor,
+                      weight: isSelected ? FontWeight.w500 : FontWeight.w400,
+                    ),
+                  )
+                ],
+              ),
             ),
           );
         },

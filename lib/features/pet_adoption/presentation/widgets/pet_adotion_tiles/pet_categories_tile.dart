@@ -7,8 +7,9 @@ class PetCategoriesTile extends StatelessWidget {
 
   final List<Categories> categories;
   final int selectedCategoryId;
+  final void Function(int) updateCallback;
 
-  const PetCategoriesTile({super.key, required this.categories, required this.selectedCategoryId,});
+  const PetCategoriesTile({super.key, required this.categories, required this.selectedCategoryId, required this.updateCallback});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,9 @@ class PetCategoriesTile extends StatelessWidget {
           secondaryTitle: 'View all',
         ),
         const SizedBox(height: 16),
-        PetCategoriesHorizontalList(categories: categories, selectedCategoryId: selectedCategoryId,),
+        PetCategoriesHorizontalList(categories: categories, selectedCategoryId: selectedCategoryId, updateCategoryIdCallback: (catId) {
+          updateCallback.call(catId);
+        },),
       ],
     );
   }

@@ -17,10 +17,13 @@ class PetDetailBloc extends Bloc<PetDetailEvent, PetDetailState> {
   //Event Handling Methods
 
   FutureOr<void> confirmAdoption(
-      AdoptMeTapActionEvent event, Emitter<PetDetailState> emit) {
+      AdoptMeTapActionEvent event, Emitter<PetDetailState> emit) async {
 
-    emit(PetDetailAdoptionSuccessState(petId: event.petId));
+    emit(PetDetailAdoptionUpdatedState(petId: event.petId));
 
+    await Future.delayed(const Duration(seconds: 1), () {
+      emit(PetDetailAdoptionSuccessState(petId: event.petId));
+    });
   }
 
   FutureOr<void> moveToPetListIngPage(

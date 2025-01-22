@@ -14,5 +14,11 @@ class PetDetailAdoptionSuccessState extends PetDetailActionState {
   PetDetailAdoptionSuccessState({required this.petId});
 }
 
+class PetDetailAdoptionUpdatedState extends PetDetailState {
+  final int petId;
+
+  PetDetailAdoptionUpdatedState({required this.petId});
+}
+
 class MoveToPetListingPageActionState extends PetDetailActionState {}
 class MoveToPetInteractiveViewerActionState extends PetDetailActionState {}

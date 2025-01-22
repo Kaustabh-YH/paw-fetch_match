@@ -16,6 +16,8 @@ class PetAdoptionBody extends StatelessWidget {
   final List<Categories> categories;
   final List<Pets> pets;
   final void Function(String searchedText) searchedTextCallback;
+  final void Function(int catId) updateCatCallback;
+  final int selectedCategoryId;
 
   //Constructor
 
@@ -23,17 +25,18 @@ class PetAdoptionBody extends StatelessWidget {
     super.key,
     required this.categories,
     required this.pets,
+    required this.selectedCategoryId,
     required this.searchedTextCallback,
+    required this.updateCatCallback,
     required this.moveToPetDetailPageCallback,
   });
 
   @override
   Widget build(BuildContext context) {
 
-    int selectedCategoryId = categories[0].id ?? 0;
     final debouncer = Debouncer();
-    final TextEditingController searchEditingController = TextEditingController();
-
+    final TextEditingController searchEditingController =
+        TextEditingController();
 
     return ListView.separated(
       padding: const EdgeInsets.symmetric(vertical: 24),
@@ -56,7 +59,7 @@ class PetAdoptionBody extends StatelessWidget {
                         controller: searchEditingController,
                         onChanged: (text) {
                           debouncer.run(
-                                () {
+                            () {
                               searchedTextCallback.call(text);
                             },
                           );
@@ -107,7 +110,13 @@ class PetAdoptionBody extends StatelessWidget {
               ),
             );
           case 2:
-            return PetCategoriesTile(categories: categories, selectedCategoryId: selectedCategoryId,);
+            return PetCategoriesTile(
+              categories: categories,
+              selectedCategoryId: selectedCategoryId,
+              updateCallback: (catId) {
+                updateCatCallback.call(catId);
+              },
+            );
 
           case 3:
             return SelectedPetCategoryListTile(

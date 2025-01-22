@@ -32,7 +32,19 @@ class PetDetailImageContainer extends StatelessWidget {
               onTap: () {
                 imageTapCallback.call();
               },
-              child: SizedBox(
+              child: petDetail.alreadyAdopted ?? false ? ColorFiltered(
+                colorFilter: ColorFilter.mode(
+                  Colors.grey,
+                  BlendMode.saturation,
+                ),
+                child: SizedBox(
+                  height: height * 0.5,
+                  child: Image.network(
+                    petDetail.imageUrl ?? '',
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ) :  SizedBox(
                 height: height * 0.5,
                 child: Image.network(
                   petDetail.imageUrl ?? '',
