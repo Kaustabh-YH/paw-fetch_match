@@ -21,6 +21,16 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        fontFamily: AppStyle.shared.getDefaultFontFamily(),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
+        useMaterial3: true,// Dark theme
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      themeMode: ThemeMode.system,
       home: const PetAdoptionListingPage(),
     );
   }
