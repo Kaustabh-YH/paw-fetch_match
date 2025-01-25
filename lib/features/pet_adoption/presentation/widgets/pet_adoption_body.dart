@@ -97,16 +97,19 @@ class PetAdoptionBody extends StatelessWidget {
               ),
             );
           case 1:
-            return Container(
-              margin: const EdgeInsets.symmetric(horizontal: 16),
-              height: 125,
-              decoration: BoxDecoration(
-                color: AppColors.primaryColor,
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Image.asset(
-                ImageAssets.petAdoptionBanner,
-                fit: BoxFit.fitWidth,
+            return ClipRRect(
+              borderRadius: BorderRadius.circular(16),
+              child: Container(
+                margin: const EdgeInsets.symmetric(horizontal: 16),
+                height: 125,
+                decoration: BoxDecoration(
+                  color: AppColors.primaryColor,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Image.asset(
+                  ImageAssets.petAdoptionBanner,
+                  fit: BoxFit.fitWidth,
+                ),
               ),
             );
           case 2:

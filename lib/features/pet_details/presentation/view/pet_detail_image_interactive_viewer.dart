@@ -27,7 +27,7 @@ class PetDetailImageInteractiveViewer extends StatelessWidget {
         child: Center(
           child: Container(
             height: MediaQuery.of(context).size.height * 0.6,
-            color: Colors.red,
+            color: Colors.black,
             child: InteractiveViewer(
               panEnabled: false, // Set it to false
               boundaryMargin: EdgeInsets.all(100),

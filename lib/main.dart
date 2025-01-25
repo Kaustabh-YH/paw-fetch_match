@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       themeMode: ThemeMode.system,
+      debugShowCheckedModeBanner: false,
       home: const PetAdoptionListingPage(),
     );
   }

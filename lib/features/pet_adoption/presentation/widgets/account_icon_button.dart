@@ -19,9 +19,16 @@ class AccountIconButton extends StatelessWidget {
         onTap: () {
           callback.call();
         },
-        child: CircleAvatar(
-          radius: 20,
-          child: Image.network(ImageAssets.dummyProfileImgUrl,),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(20),
+          child: Container(
+            width: 40,
+            height: 40,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle
+            ),
+            child: Image.network(ImageAssets.dummyProfileImgUrl,),
+          ),
         ),
       ),
     );
