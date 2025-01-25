@@ -35,6 +35,7 @@ class PetAdoptionHistoryPage extends StatelessWidget {
             hasSnackbarBeenShown = true;
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
+                backgroundColor: Colors.black,
                 content: Text(
                   'No more data to load',
                   style: AppStyle.shared.customTextStyle(color: Colors.white),
@@ -52,6 +53,7 @@ class PetAdoptionHistoryPage extends StatelessWidget {
             hasSnackbarBeenShown = true;
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
+                backgroundColor: Colors.black,
                 content: Text(
                   'No more data to load',
                   style: AppStyle.shared.customTextStyle(color: Colors.white),

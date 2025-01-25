@@ -41,14 +41,15 @@ class PetDetailImageContainer extends StatelessWidget {
                   height: height * 0.5,
                   child: Image.network(
                     petDetail.imageUrl ?? '',
-                    fit: BoxFit.cover,
+                    fit: BoxFit.fill,
                   ),
                 ),
               ) :  SizedBox(
                 height: height * 0.5,
+                width: double.infinity,
                 child: Image.network(
                   petDetail.imageUrl ?? '',
-                  fit: BoxFit.cover,
+                  fit: BoxFit.fill,
                 ),
               ),
             ),
@@ -67,7 +68,7 @@ class PetDetailImageContainer extends StatelessWidget {
                     ),
                     width: 50,
                     height: 50,
-                    child: Icon(Icons.arrow_back),
+                    child: Icon(Icons.arrow_back, color: Colors.black,),
                   ),
                 ),
               ),

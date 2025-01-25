@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pawfetch_match/core/helpers/app_style_helper.dart';
 import 'package:pawfetch_match/features/pet_adoption/data/models/pet_list_model.dart';
-import 'package:pawfetch_match/features/pet_adoption_history/presentation/blocs/pet_adoption_history_bloc.dart';
 import 'package:pawfetch_match/features/pet_details/presentation/blocs/pet_detail_bloc.dart';
 import 'package:pawfetch_match/features/pet_details/presentation/view/pet_detail_image_interactive_viewer.dart';
 import 'package:pawfetch_match/features/pet_details/presentation/widgets/pet_detail_page_body.dart';
@@ -42,6 +41,7 @@ class PetDetailPage extends StatelessWidget {
             confettiController.play();
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
+                backgroundColor: Colors.black,
                 content: Text(
                   "You've now adopted ${petDetail.name}",
                   style: AppStyle.shared.customTextStyle(

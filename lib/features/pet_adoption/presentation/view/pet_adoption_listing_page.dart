@@ -161,6 +161,7 @@ class PetAdoptionListingPage extends StatelessWidget {
     } else if (state is NoSearchMatchState) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
+          backgroundColor: Colors.black,
           content: Text(
             "No match found with your searched name",
             style: AppStyle.shared.customTextStyle(

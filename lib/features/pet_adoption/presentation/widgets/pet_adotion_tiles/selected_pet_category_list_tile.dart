@@ -41,6 +41,8 @@ class SelectedPetCategoryListTile extends StatelessWidget {
               Pets pet = pets[index];
 
               return Material(
+                color: Colors.transparent,
+                surfaceTintColor: Colors.white,
                 child: InkWell(
                   onTap: () {
                     callback.call(pet.id ?? 0);
